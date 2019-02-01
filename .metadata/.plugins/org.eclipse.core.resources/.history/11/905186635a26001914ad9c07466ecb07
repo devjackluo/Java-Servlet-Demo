@@ -1,0 +1,5 @@
+package com.jack.demos;
+
+public class GzipUtility {
+
+}

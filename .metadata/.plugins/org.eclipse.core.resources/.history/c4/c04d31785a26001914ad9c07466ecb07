@@ -1,0 +1,12 @@
+package com.jack.demos;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class GzipUtility {
+
+	public static boolean isGzipSupported(HttpServletRequest request) {
+		String encodings = request.getHeader("Accept-Encoding");
+		return (encodings != null) && (encodings.contains("gzip"));
+	}
+	
+}
